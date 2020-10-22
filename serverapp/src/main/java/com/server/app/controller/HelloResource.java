@@ -9,14 +9,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
-
 @Component
 @Path("/ping")
 public class HelloResource {
-	private Logger logger = LoggerFactory.getLogger(this.getClass().getName());
+	private Logger logger = LogManager.getLogger(this.getClass().getName());
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
