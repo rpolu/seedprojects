@@ -1,0 +1,14 @@
+target/
+.idea/
+*.iml
+dependency-reduced-pom.xml
+.project
+.settings/
+.classpath
+.factorypath
+# ignore mac artifacts
+.DS_Store
+.DS_Store?
+.metadata/
+hs_err_pid*
+.gradle
