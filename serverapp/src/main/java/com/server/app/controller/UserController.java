@@ -1,5 +1,7 @@
 package com.server.app.controller;
 
+import java.util.List;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -39,8 +41,8 @@ public class UserController {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/list")
 	public Response getUserList() {
-		userService.getUserList();
+		List<UserProfileModel> lisUsers = userService.getUserList();
 		logger.debug("User Saved In DB");
-		return Response.status(Status.CREATED).build();
+		return Response.status(Status.OK).entity(lisUsers).build();
 	}
 }
