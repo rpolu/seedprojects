@@ -25,3 +25,16 @@ Steps For Run The Appication
      
      https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
      
+     
+5) Download and Install Mongodb Compass for UI Client for Mongodb server
+
+    https://downloads.mongodb.com/compass/mongodb-compass-1.22.1-darwin-x64.dmg
+
+       Default Coonection String :  mongodb://localhost:27017/
+       
+6) Clone the project and the Application 
+
+       mvn spring-boot:run
+
+
+     
