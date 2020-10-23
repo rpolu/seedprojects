@@ -31,6 +31,10 @@ Steps For Run The Appication
     https://downloads.mongodb.com/compass/mongodb-compass-1.22.1-darwin-x64.dmg
 
        Default Coonection String :  mongodb://localhost:27017/
+       
+6) Clone the project and the Application 
+
+       mvn spring-boot:run
 
 
      
